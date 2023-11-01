@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 
+// ignore: must_be_immutable
 class LV extends StatelessWidget {
   LV({super.key});
 
   List<String> products = ['bed', 'sofa', 'chair'];
   List<String> productDetails = ['6 by 6', 'Leather', 'plastic'];
-  List<String> price = ['3000', '7000', '1000'];
+  List<int> price = [3000, 7000, 1000];
   
 
   @override
