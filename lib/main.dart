@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_app/screens/listview.dart';
+import 'package:my_app/screens/navigation.dart';
 void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       // dashboard: Dashboard(),
       // home: Appbar()
       // home: RC(),
-      home: LV(),
+      home: navi(),
     );
   }
 }
