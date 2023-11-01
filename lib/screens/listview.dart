@@ -20,7 +20,12 @@ class LV extends StatelessWidget {
         child: ListView.builder(
           itemCount: products.length,
           itemBuilder: (context, index) {
-            return Text(products[index]);
+            return ListTile(
+              leading: CircleAvatar(child: Text(products[index][0]),),
+              title: Text(products[index]),
+              subtitle: Text(productDetails[index]),
+              trailing: Text(price[index].toString()),
+            );
           },
         ),
       ),
