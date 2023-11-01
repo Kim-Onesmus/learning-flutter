@@ -9,7 +9,7 @@ class RC extends StatelessWidget {
       appBar: AppBar(title: const Text('Rows and Columns'), centerTitle: true,),
       body: const Column(
         children: [
-          Row(
+          Row(,
             children: [
               Expanded(child: Image(image: AssetImage('images/kim.jpg'), width: 150,)),
               Expanded(flex:2, child: Image(image: AssetImage('images/kim.jpg'), width: 150,)),
