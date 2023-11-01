@@ -13,7 +13,7 @@ class navi extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.amber,
+      // backgroundColor: Colors.amber,
       appBar: AppBar(
         title: const Text('Navigation Drawer'),
       ),
@@ -84,20 +84,42 @@ class navi extends StatelessWidget {
         ),
       ),
       // ignore: avoid_unnecessary_containers
-      body: Container(
-        child: ListView.builder(
-          itemCount: products.length,
-          itemBuilder: (context, index) {
-            return ListTile(
-              leading: CircleAvatar(
-                child: Text(products[index][0]),
-              ),
-              title: Text(products[index]),
-              subtitle: Text(productDetails[index]),
-              trailing: Text(price[index].toString()),
-            );
-          },
+      // body: Container(
+      //   child: ListView.builder(
+      //     itemCount: products.length,
+      //     itemBuilder: (context, index) {
+      //       return ListTile(
+      //         leading: CircleAvatar(
+      //           child: Text(products[index][0]),
+      //         ),
+      //         title: Text(products[index]),
+      //         subtitle: Text(productDetails[index]),
+      //         trailing: Text(price[index].toString()),
+      //       );
+      //     },
+      //   ),
+      // ),
+      
+      body: Center(
+        child: Container(
+          padding: const EdgeInsets.all(16),
+          constraints: const BoxConstraints.expand(
+            width: 330,
+            height: 450,
+          ),
+          decoration: const BoxDecoration(
+            boxShadow: [
+              BoxShadow(
+                color: Colors.white24,
+                offset: Offset(0, 2),
+                spreadRadius: 5,
+                blurRadius: 10
+              )
+            ],
+            image: DecorationImage(image: AssetImage('images/kim.jpg'))
+          ),
         ),
+
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       floatingActionButton: FloatingActionButton(
