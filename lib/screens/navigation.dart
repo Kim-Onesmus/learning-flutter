@@ -99,7 +99,7 @@ class navi extends StatelessWidget {
       //     },
       //   ),
       // ),
-      
+
       body: Center(
         child: Container(
           padding: const EdgeInsets.all(16),
@@ -110,16 +110,44 @@ class navi extends StatelessWidget {
           decoration: const BoxDecoration(
             boxShadow: [
               BoxShadow(
-                color: Colors.white24,
-                offset: Offset(0, 2),
-                spreadRadius: 5,
-                blurRadius: 10
-              )
+                  color: Colors.white24,
+                  offset: Offset(0, 2),
+                  spreadRadius: 5,
+                  blurRadius: 10)
             ],
-            image: DecorationImage(image: AssetImage('images/kim.jpg'))
+            image: DecorationImage(
+              image: AssetImage('images/kim.jpg'),
+              fit: BoxFit.cover,
+            ),
+            borderRadius: BorderRadius.all(Radius.circular(10.0)),
+          ),
+          child: Stack(
+            children: [
+              Positioned(
+                top: 20,
+                child: Text(
+                  'Editors Chole',
+                  style: TextStyle(color: Colors.white70, fontSize: 18),
+                ),
+              ),
+              Positioned(
+                top: 15,
+                child: Text(
+                  'Hello Kim',
+                  style: TextStyle(color: Colors.white70, fontSize: 18),
+                ),
+              ),
+              Positioned(
+                right: 0,
+                bottom: 0,
+                child: Text(
+                  'Hey you',
+                  style: TextStyle(color: Colors.white70, fontSize: 18),
+                ),
+              ),
+            ],
           ),
         ),
-
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       floatingActionButton: FloatingActionButton(
