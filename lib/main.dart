@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
       // home: Home(),
       // dashboard: Dashboard(),
       // home: Appbar()
-      home: RC(),
+      // home: RC(),
     );
   }
 }
